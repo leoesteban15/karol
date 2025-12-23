@@ -14,7 +14,7 @@ body {
 .section {
     padding-top: 100px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto; /* auto might be best fit */
 }
 
 .right-image {
@@ -25,15 +25,39 @@ body {
     margin: 0 20px 10px 20px;
 }
 
-.text-box {
+.left-image {
+    float: left;
+    width: 400px;
+    height: auto;
+    max-width: 40%;
+    margin: 0 20px 10px 20px;
+}
+
+.text-box-left {
     border: 5px solid red;
     background-color: rgba(255, 255, 255, 1);
     padding: 15px;
-    margin-top: 300px;
+    margin-left: 20px;
     display: flow-root;
+}
+
+.text-box-right {
+    border: 5px solid red;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 15px;
+    margin-right: 20px;
+    display: flow-root;
+}
+
+#first-text {
+    margin-top: 300px;
 }
 
 p {
     line-height: 1.6;
     margin: 0;
+}
+
+h2 {
+    text-align: center;
 }
